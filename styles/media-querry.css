@@ -1,0 +1,41 @@
+/* lg screens < 1280  px */
+@media screen and (max-width:1280px ){
+   
+
+
+
+}
+
+
+/* md screens < 1024  px */
+@media screen and (max-width:990px ){
+
+header{
+    height: fit-content !important;
+    background-color: blue !important;
+}
+.journey-division-line{
+    width: 70vw;
+}    
+/* for the floated p in the image */
+header .header-image div {
+    transform: translate(-10%, 25%);
+}
+}
+
+
+/* sm screens < 768  px */
+@media screen and (max-width:768px ){
+
+
+    
+}
+
+
+/* xs screens <  640 px */
+@media screen and (max-width:640px ){
+    
+/* .scroll img{width: 30%;
+border-radius: 10px;} */
+    
+}

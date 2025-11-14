@@ -1,0 +1,570 @@
+:root {
+  /* my colors  */
+  --main-color: rgb(11, 14, 19);
+  --second-color: rgb(203, 254, 28);
+  --third-color: oklch(0.21 0.034 264.665);
+  --fourth-color: oklch(0.278 0.033 256.848);
+  --fifth-color: oklab(0 0 0 / 0.5);
+  --sixth-color: rgb(26, 26, 26);
+  --seventh-color: #7f7f7f;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: var(--second-color);
+  /* height: 3000px; */
+  background-color: var(--main-color);
+}
+::selection {
+  color: var(--main-color);
+  background-color: rgb(203, 254, 28, 0.8);
+}
+.font-days {
+  font-family: "Days One", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+/* ! navbar styling */
+
+nav {
+  background-color: var(--main-color);
+  border-bottom: 1px solid var(--fourth-color);
+}
+.nav-sign {
+  background: var(--second-color);
+}
+nav span span {
+  color: var(--seventh-color);
+  cursor: pointer;
+}
+.navbar-nav .nav-link.active {
+  color: var(--second-color);
+}
+
+nav span p {
+  color: var(--seventh-color);
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.nav-sign:hover {
+  background-color: var(--second-color) !important;
+}
+/* .navbar  li a{
+  color: #7f7f7f !important;
+} */
+ .navbar-toggler:focus{
+  box-shadow: 0 0 0 0 transparent !important;
+ }
+ .navbar-toggler{
+  color: white ;
+  border: none;
+ }
+.navbar-brand{
+  color: var(--second-color) !important;
+}
+.navbar-brand:hover{
+  color: var(--second-color);
+}
+
+.navbar li a:hover {
+  color: var(--second-color);
+}
+.navbar .container-fluid button {
+  color: var(--seventh-color);
+}
+nav .container a,
+nav .container span {
+  color: white;
+}
+.navbar .container-fluid > a {
+  color: var(--second-color);
+}
+
+nav .collapse div,
+nav .board {
+  height: 3px;
+}
+/* this is for the before and after line in every section title  */
+section > div p{
+  position: relative;
+}
+
+/* ! general style for each section title */
+.my-color{
+  color: var(--second-color);
+}
+/* shiny effect */
+
+.shiny-effect{
+  display: block;
+  background-image: linear-gradient(to left ,  transparent , rgba(255, 255, 255, 0.64)  , transparent);
+  transition: .5s;
+  right: 100%;
+}
+.shiny{
+  overflow: hidden !important;
+}
+.shiny:hover .shiny-effect{
+  right: -100%;
+}
+
+section > div p{
+letter-spacing: 3px;  /* no one will notice this 🤣*/
+  color: var(--second-color);
+}
+
+section > div p::after{
+  content: "";
+  width: 5rem;
+  position: absolute;
+  align-self: center;
+  transform: translatex(1rem);
+  height: 3px;
+  background-image: linear-gradient(to right ,var(--second-color),transparent);
+  margin: .3rem;
+}
+
+section > div p::before{
+  content: "";
+  width: 5rem;
+  position: absolute;
+  right: calc(50% + 5rem);
+  align-self: center;
+  height: 3px;
+  background-image: linear-gradient(to left ,var(--second-color),transparent);
+  margin: .3rem;
+}
+
+
+/* ! header styling  */
+header {
+  height: 100vh;
+  background-image: url(/images/hero-bg.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+/* black layer in background */
+.opacity-90 {
+  background-color: rgba(0, 0, 0, 0.9);
+
+}
+header .headings h2 {
+  /* font-size: 3.75rem; */
+  font-weight: 700;
+  color: #f1f1f1;
+  /* line-height: 4.7rem; */
+}
+header .headings h2:nth-of-type(2) {
+  color: var(--second-color);
+}
+
+header .header-content > p {
+  color: #aaafb8;
+
+  line-height: 1.6;
+  font-size: initial;
+
+  font-weight: 400;
+}
+header .header-content .btn {
+  background-color: var(--second-color);
+  color: var(--main-color);
+}
+header .header-content > div {
+  position: static;
+}
+
+header .header-content .btn-watch,
+.carousel-span {
+  color: var(--second-color);
+  background-color: transparent;
+
+  border: var(--second-color) 2px solid;
+}
+header .header-content .btn-watch:hover,
+.carousel-span:hover {
+  background-color: var(--second-color);
+  color: var(--main-color);
+}
+
+/* header image section styling */
+header .header-image {
+
+  background: linear-gradient(to right, var(--second-color), rgb(0, 255, 149));
+}
+header .header-image p {
+  color: var(--seventh-color);
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+header img {
+  height: 100%;
+  object-fit: cover;
+}
+header .header-image div {
+  background-color: var(--main-color);
+  transform: translate(-25%, 25%);
+  border: var(--seventh-color) 1px solid;
+}
+header .fa-trophy {
+  color: var(--second-color);
+}
+header .header-image div h2 {
+  margin-top: -1rem;
+}
+/* ! our game styling */
+/* .carousel-item{
+  width: fit-content !important;
+}
+.carousel-item .row{
+  width: fit-content;
+} */
+
+.games .image-content {
+  gap: 10rem;
+}
+.games img {
+  width: 50%;
+  object-fit: cover;
+}
+/* 
+.games:hover .games img{
+  transform: scale(1.1);
+  background-color: red;
+  padding: 10rem;
+} */
+.games .fa-solid {
+  color: var(--second-color);
+}
+
+/*  transition of image ,text and yellow layer */
+.image-text {
+  transition: all 0.4s;
+  transform: scaleY(1.5);
+}
+.image-layer {
+  transition: 0.3s;
+  border: 2px solid var(--second-color);
+  transform: scale(2);
+  background-color: none;
+}
+
+.games-image img {
+  transition: 0.5s;
+}
+/* scale up the image  when hover */
+.games-image:hover img {
+  transform: scale(1.2);
+}
+/* mace text visible when hover */
+.games-image:hover .image-text {
+  transform: scaleY(1);
+}
+/* show the yellow layer when hover */
+.games-image:hover .image-layer {
+  transform: scale(1);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    transparent,
+    var(--second-color)
+  ) !important;
+}
+/* .carousel-control-prev-icon{
+} */
+.carousel-control-next,
+.carousel-control-prev {
+  height: fit-content;
+  width: fit-content;
+}
+.carousel .carousel-switch span:not(:last-of-type) {
+  border: 3px solid;
+  border-radius: 50%;
+  padding: 1rem;
+  color: var(--fourth-color);
+}
+.carousel .carousel-switch span:not(:last-of-type):hover {
+  color: var(--second-color);
+}
+.carousel .carousel-switch:hover .carousel .carousel-switch i{
+  background-color: red;
+  color: var(--second-color) !important;
+}
+.carousel .carousel-switch i {
+  color: var(--seventh-color);
+
+}
+/* !journey section start */
+.journey-division-line{
+  height: 2px;
+  width: 40vw;
+  background: radial-gradient(var(--second-color)  , transparent);
+  background: radial-gradient(circle,rgba(203, 254, 28, 1) 80%, transparent 97%, transparent 100%);
+  box-shadow: 0 0 5px 1px var(--second-color);
+}
+.journey .card{
+border: 2px solid var(--fourth-color);
+background-color:#1A1A1A;
+transition: .5s;
+}
+.journey .card:hover{
+  border: var(--second-color) 2px solid;
+}
+
+.journey .card span{
+  color: var(--second-color);
+background-color: var(--fourth-color);
+transition: .5s;  
+}
+.journey .card:hover span{
+  background-color: var(--second-color);
+  color: var(--main-color);
+}
+.journey .card .traingles{
+  transform: scale(1.5);
+  transition: .5s;
+}
+.journey .card:hover .traingles{
+  transform: scale(1);
+
+}
+
+.journey .card .triangle{
+
+width: 0;
+	height: 0;
+  border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 15px solid var(--second-color);
+  
+}
+.journey .card .top-triangle{
+  transform:  rotate(-45deg);
+  right: .8rem;
+}
+.journey .card .bottom-triangle{
+  transform:  rotate(135deg);
+left: .8rem;
+}
+
+/* scroll images section start */
+
+.scroll {
+  background-image: radial-gradient(
+    var(--second-color),
+    var(--second-color),
+    var(--main-color),
+    var(--main-color)
+  );
+
+  overflow: hidden;
+}
+.scroll img {
+  margin-inline: 0.5rem;
+}
+.journey .scroll .scroll-start div {
+  width: fit-content;
+}
+.scroll-left {
+  animation: move-left 30s infinite linear;
+}
+.scroll-right {
+  animation: move-right 30s infinite linear;
+}
+/* animation for moving left slider */
+@keyframes move-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+/* animation for moving right slider */
+
+@keyframes move-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-layer {
+  background: linear-gradient(
+    to left,
+    black 1%,
+    transparent 10%,
+    transparent 90%,
+    black 99%
+  );
+}
+/* !our team style */
+section > div > h5{
+  color: var(--seventh-color);
+
+}
+
+.team .card .grey-layer{
+  transition:  .6s;
+  backdrop-filter: grayscale(100%);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 113%;
+  height: 100%;
+}
+
+.team .card:hover .grey-layer{
+height: 0%;
+}
+.team img{
+  width: 113%;
+}
+.team .card-text p:last-of-type{
+  color: var(--seventh-color);
+}
+.team .team-1{
+  background-image: url(../images/avatar-1.png);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position-x:center ;
+  background-position-y:center ;
+}
+.team .team-2{
+  background-image: url(../images/avatar-2.png);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position-x:center ;
+  background-position-y:center ; 
+}
+.team .team-3{
+  background-image: url(../images/avatar-3.png);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position-x:center ;
+  background-position-y:center ; 
+}
+.team .team-4{
+  background-image: url(../images/avatar-4.png);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position-x:center ;
+  background-position-y:center ; 
+}
+.team .team-5{
+  background-image: url(../images/avatar-5.png);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position-x:center ;
+  background-position-y:center ; 
+}
+.team .team-6{
+  background-image: url(../images/avatar-6.png);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position-x:center ;
+  background-position-y:center ; 
+}
+.team .team-7{
+  background-image: url(../images/avatar-7.png);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position-x:center ;
+  background-position-y:center ; 
+}
+.team .team-8{
+  background-image: url(../images/avatar-8.png);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position-x:center ;
+  background-position-y:center ; 
+}
+.team .card span{
+  transform:  rotate(90deg) translateX(-100%);
+  /* bottom: 30%; */
+} 
+
+/* !  contact styling */
+.contact{
+  background-color: var(--third-color);
+}
+.contact  .my-card-color{
+  background-color: var(--fourth-color);
+}
+
+.contact-cards .anything{
+  color: var(--seventh-color);
+}
+.contact .form-card .card-footer{  
+color: var(--seventh-color);
+border-top: 1px solid ;
+}
+.gradient-card{
+  background: linear-gradient(to right, var(--second-color), rgb(0, 255, 149));
+}
+.gradient-card a{
+
+}
+form label{
+  color: #aaafb8;
+  /* color: red; */
+}
+form input ,form textarea , form select , form select option{
+  color: var(--seventh-color);
+  width: 100%;
+  border: #5c6066 1px solid ;
+  background-color: #364153;
+}
+
+form select ,form select option{
+  color: #aaafb8 !important;
+}
+
+form input:focus ,form textarea:focus , form select:focus{
+outline: var(--second-color) 2px solid !important ;
+}
+/* remove the dashes in the right bottom corner of text area  */
+textarea{
+  resize: none !important;
+}
+form .btn{
+  background-color: var(--second-color) !important;
+}
+
+/* contact start card */
+.contact .contact-cards .card-icon{
+  background-color: var(--second-color);
+}   
+.contact-a-link{
+  transition: .3s;
+}
+
+.contact-a-link:hover{
+  background-color: #0006 !important;
+
+}
+
+/* !  footer styling */
+
+.footer-head {
+  border-bottom: 2px solid var(--third-color);
+}
+footer {
+  color: var(--seventh-color);
+}
+footer .my-color {
+  color: var(--second-color) !important;
+}
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--second-color) !important;
+}

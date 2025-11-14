@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>assignment 6</title>
+  <!-- favicon -->
+  <link rel="icon" href="./images/favicon.png" />
+  <!--  font awesome  -->
+  <link rel="stylesheet" href="./styles/all.min.css" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet" />
+  <!-- bootstrab style -->
+  <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+  <!--  main style file  -->
+  <link rel="stylesheet" href="styles/style.css" />
+  <!-- MEDIA QUERRY STYLE FILE  -->
+  <link rel="stylesheet" href="styles/media-querry.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -80%"
+  data-bs-smooth-scroll="true">
+  <!-- ! navbar start -->
+  <nav class="navbar  navbar-expand-lg fixed-top ">
+    <div class="container ">
+      <a class="navbar-brand fw-bold">
+        <h2 class="fs-5"><i class="fa-solid fa-gamepad me-1"></i> GameArena</h2>
+      </a>
+
+      <button class="navbar-toggler fs-2 border-0 me-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarText">
+        <div class="board bg-dark my-2 rounded-4 w-100 d-lg-none"></div>
+        <ul id="navbar-example2" class="navbar-nav fs-6 me-auto mb-2 mb-lg-0 text-warning">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#our-games">OUR GAMES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#interactive-journeys">What We Do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#our-team">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-lg-none" href="#tournament">Tournaments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-us">Contact Us</a>
+          </li>
+        </ul>
+        <span class="navbar-text fs-6  d-lg-flex flex-lg-row align-items-lg-center">
+          <div class="board bg-dark my-2 rounded-4 w-100 d-lg-none"></div>
+          <span class="p-1 w-sm-100 border-sm-1 d-block d-lg-inline"><i class="fa-regular fa-bell"></i>
+            <span class="d-lg-none">Notification</span></span>
+          <span class="me-1 p-1 d-block d-lg-inline"><i class="fa-regular fa-message"></i><span class="d-lg-none">Message</span></span>
+          <div class=" d-lg-inline h-100 align-content-lg-start mt-lg-0">
+            <p class="nav-sign m-lg-0 d-block shiny w-sm-100 text-center text-black px-3 py-2 rounded-3 fw-bold  position-relative  ">
+               <span class="shiny-effect  h-100 w-25 top-0  position-absolute "></span>Sign In
+            </p>
+          </div>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end  -->
+
+  <!-- !header start -->
+  <header id="home"
+  class=" text-center  text-lg-start mb-5 d-flex justify-content-center align-items-center w-100 position-relative">
+  <div class="w-100 h-100 opacity-90 z-0 position-absolute"></div>
+    <div class="container w-100 overflow-hidden h-100 position-relative z-2 pt-5">
+     <div class="row  row-cols-1 row-cols-lg-2 g-5 mb-5 ">
+        <div class="col">
+          <div class="header-content my-5 pb-lg-0 flex-row justify-content-around align-items-start">
+            <div class="headings font-days mb-3">
+              <h2 class="display-4">THE ULTIMATE</h2>
+              <h2 class="display-4">GAMING</h2>
+              <h2 class="display-4">EXPERIENCE</h2>
+            </div>
+            <p class="my-6 px-4 pe-lg-4  px-lg-0 px-md-3  mb-5">
+              Join millions of gamers worldwide in the most competitive eSports
+              tournaments. Experience next-level gaming with cutting-edge
+              technology and endless possibilities.
+            </p>
+            <div class="btns w-100">
+              <div class="row row-cols-1 row-cols-md-2">
+                <div class="col">
+                  <p class="btn shiny position-relative  fw-bold w-100 py-3 px-5 me-lg-2">
+                    <span class="shiny-effect h-100 w-50 top-0  position-absolute "></span>Start Gaming Now
+                  </p>
+                </div>
+                <div class="col">
+                  <p class="btn btn-watch shiny position-relative fw-bold w-100 py-3 px-5">
+                  <!-- this span four shiny effect -->
+                    <span class="shiny-effect h-100 w-25 top-0  position-absolute "></span>Watch Tournaments
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- header image wrapper -->
+        <div class="col">
+          <div class="header-image mt-3 mt-lg-5 w-100 h-75 ms-0 p-1 ms-lg-2 rounded-5 mb-5 mb-lg-0 position-relative">
+            <img class="rounded-5 w-100" src="./images/hero-img.png" alt="gaming setup" />
+            <div
+              class="position-absolute px-1 py-4 bottom-0 start-0 rounded-3 px-4 fs-6 fw-bold d-flex align-items-center gap-2">
+              <span><i class="fa-solid fa-trophy fs-5"></i></span>
+              <span>
+                <p>Active Players</p>
+                <h2 class="fs-5 text-white">2.5M+</h2>
+              </span>
+            </div>
+
+          </div>
+        </div>
+     </div>
+    </div>
+  </header>
+  <!-- header end -->
+  <!-- ! games section  start -->
+  <section id="our-games" class="games  container mt-5">
+    <div class="text-center pt-3">
+      <p class="fs-6 mt-5 mx-1 fw-bold">OUR GAMES</p>
+      <h1 class="text-white display-4 fw-bolder font-days">
+        Our Latest Games
+      </h1>
+    </div>
+    <main>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner mb-5">
+          <div class="carousel-item active">
+            <!-- <div class="d-flex justify-content-around p-5 gap-4 flex-lg-nowrap"> -->
+            <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 flex-nowrap ">
+              <div class="col">
+                <div class="games-image rounded-4 overflow-hidden position-relative">
+                  <img class="rounded-4 object-fit-scale w-100 h-100" src="./images/latest-games-1.png"
+                    alt="latest-games" />
+                  <div class="image-layer w-100 h-100 rounded-4 position-absolute top-0"></div>
+                  <div
+                    class="rounded-4 image-text p-2 position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column justify-content-between">
+                            <p class="mt-2">
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="fa-solid me-1 fa-flag-checkered"></i>
+                        <span class="text-white">race</span></span>
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="me-1 fa-solid fa-hat-wizard"></i>
+                        <span class="text-white">Action</span></span>
+                    </p>
+                    <p class="text-black fs-5">anything in your mind y 😁</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="games-image rounded-4 overflow-hidden position-relative">
+                  <img class="rounded-4 object-fit-scale w-100 h-100" src="./images/latest-games-2.png"
+                    alt="latest-games" />
+                  <div class="image-layer w-100 h-100 rounded-4 position-absolute top-0"></div>
+                  <div
+                    class="rounded-4 image-text p-2 position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column justify-content-between">
+                            <p class="mt-2">
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="fa-solid me-1 fa-flag-checkered"></i>
+                        <span class="text-white">race</span></span>
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="me-1 fa-solid fa-hat-wizard"></i>
+                        <span class="text-white">Action</span></span>
+                    </p>
+                    <p class="text-black fs-5">anything in your mind y 😁</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="games-image rounded-4 overflow-hidden position-relative">
+                  <img class="rounded-4 object-fit-scale w-100 h-100" src="./images/latest-games-3.png"
+                    alt="latest-games" />
+                  <div class="image-layer w-100 h-100 rounded-4 top-0 position-absolute"></div>
+                  <div
+                    class="rounded-4 image-text p-1 position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column justify-content-between">
+                    <p class="mt-2">
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="fa-solid me-1 fa-flag-checkered"></i>
+                        <span class="text-white">race</span></span>
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="me-1 fa-solid fa-hat-wizard"></i>
+                        <span class="text-white">Action</span></span>
+                    </p>
+                    <p class="text-black fs-5">anything in your mind y 😁</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- <div class="d-flex justify-content-around p-5 gap-4 flex-lg-nowrap"> -->
+            <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 flex-nowrap">
+           
+           <div class="col">
+                <div class="games-image rounded-4 overflow-hidden position-relative">
+                  <img class="rounded-4 object-fit-scale w-100 h-100" src="./images/latest-games-4.png"
+                    alt="latest-games" />
+                  <div class="image-layer w-100 h-100 rounded-4 position-absolute top-0"></div>
+                  <div
+                    class="rounded-4 image-text p-2 position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column justify-content-between">
+                            <p class="mt-2">
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="fa-solid me-1 fa-flag-checkered"></i>
+                        <span class="text-white">race</span></span>
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="me-1 fa-solid fa-hat-wizard"></i>
+                        <span class="text-white">Action</span></span>
+                    </p>
+                    <p class="text-black fs-5">anything in your mind y 😁</p>
+                  </div>
+                </div>
+           </div>
+
+           <div class="col">
+                <div class="games-image rounded-4 overflow-hidden position-relative">
+                  <img class="rounded-4 object-fit-scale w-100 h-100" src="./images/latest-games-5.png"
+                    alt="latest-games" />
+                  <div class="image-layer w-100 h-100 rounded-4 position-absolute top-0"></div>
+                  <div
+                    class="rounded-4 image-text p-2 position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column justify-content-between">
+                            <p class="mt-2">
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="fa-solid me-1 fa-flag-checkered"></i>
+                        <span class="text-white">race</span></span>
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="me-1 fa-solid fa-hat-wizard"></i>
+                        <span class="text-white">Action</span></span>
+                    </p>
+                    <p class="text-black fs-5">anything in your mind y 😁</p>
+                  </div>
+                </div>
+           </div>
+           <div class="col">
+                <div class="games-image rounded-4 overflow-hidden position-relative">
+                  <img class="rounded-4 object-fit-scale w-100 h-100" src="./images/latest-games-6.png"
+                    alt="latest-games" />
+                  <div class="image-layer w-100 h-100 rounded-4 top-0 position-absolute"></div>
+                  <div
+                    class="rounded-4 image-text p-1 position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column justify-content-between">
+                    <p class="mt-2">
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="fa-solid me-1 fa-flag-checkered"></i>
+                        <span class="text-white">race</span></span>
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="me-1 fa-solid fa-hat-wizard"></i>
+                        <span class="text-white">Action</span></span>
+                    </p>
+                    <p class="text-black fs-5">anything in your mind y 😁</p>
+                  </div>
+                </div>
+           </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- <div class="d-flex justify-content-around p-5 gap-4 flex-lg-nowrap"> -->
+            <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 flex-nowrap">
+        
+              <div class="col">
+                <div class="games-image rounded-4 overflow-hidden position-relative">
+                  <img class="rounded-4 object-fit-scale w-100 h-100" src="./images/latest-games-7.png"
+                    alt="latest-games" />
+                  <div class="image-layer w-100 h-100 rounded-4 position-absolute top-0"></div>
+                  <div
+                    class="rounded-4 image-text p-2 position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column justify-content-between">
+                            <p class="mt-2">
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="fa-solid me-1 fa-flag-checkered"></i>
+                        <span class="text-white">race</span></span>
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="me-1 fa-solid fa-hat-wizard"></i>
+                        <span class="text-white">Action</span></span>
+                    </p>
+                    <p class="text-black fs-5">anything in your mind y 😁</p>
+                  </div>
+                </div>
+           </div>
+
+           <div class="col">
+                <div class="games-image rounded-4 overflow-hidden position-relative">
+                  <img class="rounded-4 object-fit-scale w-100 h-100" src="./images/latest-games-8.png"
+                    alt="latest-games" />
+                  <div class="image-layer w-100 h-100 rounded-4 position-absolute top-0"></div>
+                  <div
+                    class="rounded-4 image-text p-2 position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column justify-content-between">
+                            <p class="mt-2">
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="fa-solid me-1 fa-flag-checkered"></i>
+                        <span class="text-white">race</span></span>
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="me-1 fa-solid fa-hat-wizard"></i>
+                        <span class="text-white">Action</span></span>
+                    </p>
+                    <p class="text-black fs-5">anything in your mind y 😁</p>
+                  </div>
+                </div>
+           </div>
+           <div class="col">
+                <div class="games-image rounded-4 overflow-hidden position-relative">
+                  <img class="rounded-4 object-fit-scale w-100 h-100" src="./images/latest-games-9.png"
+                    alt="latest-games" />
+                  <div class="image-layer w-100 h-100 rounded-4 top-0 position-absolute"></div>
+                  <div
+                    class="rounded-4 image-text p-1 position-absolute top-0 bottom-0 start-0 end-0 d-flex flex-column justify-content-between">
+                    <p class="mt-2">
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="fa-solid me-1 fa-flag-checkered"></i>
+                        <span class="text-white">race</span></span>
+                      <span class="mx-1 bg-black bg-opacity-50 px-4 py-2 rounded-5">
+                        <i class="me-1 fa-solid fa-hat-wizard"></i>
+                        <span class="text-white">Action</span></span>
+                    </p>
+                    <p class="text-black fs-5">anything in your mind y 😁</p>
+                  </div>
+                </div>
+           </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-switch d-flex flex-row fs-3 justify-content-center gap-3 align-items-center position-relative bg-opacity-100 mb-5">
+          <button class="position-relative opacity-100 carousel-control-prev border-0" type="button"
+            data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span> <i class="fa-solid fa-arrow-left"></i></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="position-relative opacity-100 carousel-control-next border-0" type="button"
+            data-bs-target="#carouselExample" data-bs-slide="next">
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <span class="carousel-span btn fw-bold fs-5 ms-2 px-4 py-3 text-center align-self-center">VIEW ALL
+            GAMES</span>
+        </div>
+      </div>
+    </main>
+  </section>
+  <!-- section our games   end -->
+
+  <!-- !section journey start -->
+  <section id="interactive-journeys" class="journey ">
+    <div class="text-center pt-3">
+      <p class="fs-6 mt-5 mx-1 fw-bold">WHAT WE DO</p>
+      <h1 class="text-white display-5 mb-1 fw-bolder font-days">
+        More Than Just Games
+      </h1>
+      <h2 class="text-white display-5 fw-bold">
+        We Build <span class="my-color">Interactive</span> Journeys
+      </h2>
+    </div>
+    <main>
+      <div class="interactive-cards mt-5 text-white font-days container">
+        <div class="row row-cols-2 row-cols-lg-4 g-3">
+          <div class="col">
+            <div class="card overflow-hidden position-relative py-5 rounded-4 d-flex">
+              <div
+                class="traingles d-flex flex-column justify-content-between p-3 position-absolute top-0 start-0 bottom-0 end-0">
+                <div class="triangle top-triangle align-self-start position-relative"></div>
+                <div class="triangle bottom-triangle align-self-end position-relative"></div>
+              </div>
+              <div class="card-body my-2 text-center">
+                <p class="p-4">
+                  <span class="p-3 rounded-2 fs-4">
+                    <i class="fa-solid fa-desktop"></i>
+                  </span>
+                </p>
+                <h3 class="text-white fs-5 fw-bold">PC Game</h3>
+                <h3 class="text-white fs-5 fw-bold">Development</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card overflow-hidden position-relative py-5 rounded-4 d-flex">
+              <div
+                class="traingles d-flex flex-column justify-content-between p-3 position-absolute top-0 start-0 bottom-0 end-0">
+                <div class="triangle top-triangle align-self-start position-relative"></div>
+                <div class="triangle bottom-triangle align-self-end position-relative"></div>
+              </div>
+              <div class="card-body my-2 text-center">
+                <p class="p-4">
+                  <span class="p-3 rounded-2 fs-4">
+                    <i class="fa-solid fa-desktop"></i>
+                  </span>
+                </p>
+                <h3 class="text-white fs-5 fw-bold">PC Game</h3>
+                <h3 class="text-white fs-5 fw-bold">Development</h3>
+              </div>
+            </div>
+          </div>  
+          <!-- img 1 card -->
+          <div class="col">
+            <div class="card h-100  rounded-4 overflow-hidden">
+              <div class="card-body p-0 ">
+                <img class="w-100 h-100 object-fit-cover" src="./images/what-we-do-1.png" alt="wwdo 1" />
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card overflow-hidden position-relative py-5 rounded-4 d-flex">
+              <div
+                class="traingles d-flex flex-column justify-content-between p-3 position-absolute top-0 start-0 bottom-0 end-0">
+                <div class="triangle top-triangle align-self-start position-relative"></div>
+                <div class="triangle bottom-triangle align-self-end position-relative"></div>
+              </div>
+              <div class="card-body my-2 text-center">
+                <p class="p-4">
+                  <span class="p-3 rounded-2 fs-4">
+                    <i class="fa-solid fa-desktop"></i>
+                  </span>
+                </p>
+                <h3 class="text-white fs-5 fw-bold">PC Game</h3>
+                <h3 class="text-white fs-5 fw-bold">Development</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card overflow-hidden position-relative py-5 rounded-4 d-flex">
+              <div
+                class="traingles d-flex flex-column justify-content-between p-3 position-absolute top-0 start-0 bottom-0 end-0">
+                <div class="triangle top-triangle align-self-start position-relative"></div>
+                <div class="triangle bottom-triangle align-self-end position-relative"></div>
+              </div>
+              <div class="card-body my-2 text-center">
+                <p class="p-4">
+                  <span class="p-3 rounded-2 fs-4">
+                    <i class="fa-solid fa-desktop"></i>
+                  </span>
+                </p>
+                <h3 class="text-white fs-5 fw-bold">PC Game</h3>
+                <h3 class="text-white fs-5 fw-bold">Development</h3>
+              </div>
+            </div>
+          </div>
+          <!-- img 2 card -->
+          <div class="col">
+            <div class="card h-100 rounded-4 overflow-hidden">
+              <div class="card-body p-0">
+                <img class="w-100 h-100 object-fit-cover" src="./images/./what-we-do-2.png" alt="wwdp2" />
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card overflow-hidden position-relative py-5 rounded-4 d-flex">
+              <div
+                class="traingles d-flex flex-column justify-content-between p-3 position-absolute top-0 start-0 bottom-0 end-0">
+                <div class="triangle top-triangle align-self-start position-relative"></div>
+                <div class="triangle bottom-triangle align-self-end position-relative"></div>
+              </div>
+              <div class="card-body my-2 text-center">
+                <p class="p-4">
+                  <span class="p-3 rounded-2 fs-4">
+                    <i class="fa-solid fa-desktop"></i>
+                  </span>
+                </p>
+                <h3 class="text-white fs-5 fw-bold">PC Game</h3>
+                <h3 class="text-white fs-5 fw-bold">Development</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card overflow-hidden position-relative py-5 rounded-4 d-flex">
+              <div
+                class="traingles d-flex flex-column justify-content-between p-3 position-absolute top-0 start-0 bottom-0 end-0">
+                <div class="triangle top-triangle align-self-start position-relative"></div>
+                <div class="triangle bottom-triangle align-self-end position-relative"></div>
+              </div>
+              <div class="card-body my-2 text-center">
+                <p class="p-4">
+                  <span class="p-3 rounded-2 fs-4">
+                    <i class="fa-solid fa-desktop"></i>
+                  </span>
+                </p>
+                <h3 class="text-white fs-5 fw-bold">PC Game</h3>
+                <h3 class="text-white fs-5 fw-bold">Development</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="journey-division-line my-5 m-auto"></div>
+      <div class="scroll px-1 px-md-2 py-5">
+        <div class="scroll-parent my-5 mx-md-2 overflow-hidden position-relative">
+          <div class="scroll-left m-auto mb-3">
+            <div class="scroll-image list-unstyled d-flex flex-row gap-2">
+              <img class="rounded-5" src="./images/logo-1.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-2.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-3.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-4.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-5.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-6.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-7.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-8.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-9.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-10.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-11.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-12.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-1.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-2.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-3.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-4.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-5.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-6.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-7.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-8.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-9.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-10.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-11.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-12.jpg" alt="scroll logo" />
+            </div>
+          </div>
+          <div class="scroll-right m-auto">
+            <div class="scroll-image list-unstyled d-flex flex-row gap-2">
+              <img class="rounded-5" src="./images/logo-1.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-2.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-3.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-4.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-5.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-6.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-7.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-8.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-9.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-10.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-11.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-12.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-1.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-2.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-3.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-4.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-5.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-6.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-7.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-8.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-9.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-10.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-11.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-12.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-6.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-7.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-8.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-9.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-10.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-11.jpg" alt="scroll logo" />
+              <img class="rounded-5" src="./images/logo-12.jpg" alt="scroll logo" />
+            </div>
+          </div>
+          <div class="scroll-layer position-absolute top-0 bottom-0 h-100 w-100 start-0 end-0 z-3"></div>
+        </div>
+      </div>
+    </main>
+  </section>
+  <!-- section   end -->
+
+  <!-- !section  start -->
+  <section id="our-team" class="team  pb-5 mb-5">
+    <div class="text-center pt-3 mb-5">
+      <p class="fs-6 mt-5 mx-1 fw-bold">OUR TEAM</p>
+      <h1 class="text-white display-5 mb-1 fw-bolder font-days">
+        Our Best Team Members
+      </h1>
+      <h5 class="mt-2">
+        Meet the professional gamers and experts behind our success
+      </h5>
+    </div>
+    <main class="container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card position-relative border-0 pt-5 pb-2 team-1">
+            <!-- 👇 this is layer to make greyscale filter -->
+            <div class="grey-layer z-1 rounded-1 position-absolute start-0 end-0 top-0"></div>
+            <!-- 👆 this is layer to make greyscale filter -->
+            <!-- this is nothing <div class="team-card-layer position-absolute top-0 bottom-0 start-0 end-0"></div> -->
+            <div class="card-body mb-0 pt-5 pb-0 mt-5">
+              <div class="card-title mt-5 font-days text-white fs-4">
+                <h4 class="mb-0 pb-1">Alex "Phantom" Chen</h4>
+              </div>
+              <div class="card-text position-relative m-0">
+                <p class="my-color m-0">Pro Player - VALORANT</p>
+                <p class="m-0">World Champion 2023</p>
+              </div>
+              <span class="position-absolute end-0 my-color">PHANTOM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card positon-relative border-0 pt-5 pb-2 team-2">
+            <!-- 👇 this is layer to make greyscale filter -->
+            <div class="grey-layer z-1 rounded-1 position-absolute start-0 end-0 top-0"></div>
+            <!-- 👆 this is layer to make greyscale filter -->
+            <!-- this is nothing <div class="team-card-layer position-absolute top-0 bottom-0 start-0 end-0"></div> -->
+            <div class="card-body mb-0 pt-5 pb-0 mt-5">
+              <div class="card-title mt-5 font-days text-white fs-4">
+                <h4 class="mb-0 pb-1">Alex "Phantom" Chen</h4>
+              </div>
+              <div class="card-text position-relative m-0">
+                <p class="my-color m-0">Pro Player - VALORANT</p>
+                <p class="m-0">World Champion 2023</p>
+              </div>
+              <span class="position-absolute end-0 my-color">PHANTOM</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card positon-relative border-0 pt-5 pb-2 team-3">
+            <!-- 👇 this is layer to make greyscale filter -->
+            <div class="grey-layer z-1 rounded-1 position-absolute start-0 end-0 top-0"></div>
+            <!-- 👆 this is layer to make greyscale filter -->
+            <!-- this is nothing <div class="team-card-layer position-absolute top-0 bottom-0 start-0 end-0"></div> -->
+            <div class="card-body mb-0 pt-5 pb-0 mt-5">
+              <div class="card-title mt-5 font-days text-white fs-4">
+                <h4 class="mb-0 pb-1">Alex "Phantom" Chen</h4>
+              </div>
+              <div class="card-text position-relative m-0">
+                <p class="my-color m-0">Pro Player - VALORANT</p>
+                <p class="m-0">World Champion 2023</p>
+              </div>
+              <span class="position-absolute end-0 my-color">PHANTOM</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card positon-relative border-0 pt-5 pb-2 team-4">
+            <!-- 👇 this is layer to make greyscale filter -->
+            <div class="grey-layer z-1 rounded-1 position-absolute start-0 end-0 top-0"></div>
+            <!-- 👆 this is layer to make greyscale filter -->
+            <!-- this is nothing <div class="team-card-layer position-absolute top-0 bottom-0 start-0 end-0"></div> -->
+            <div class="card-body mb-0 pt-5 pb-0 mt-5">
+              <div class="card-title mt-5 font-days text-white fs-4">
+                <h4 class="mb-0 pb-1">Alex "Phantom" Chen</h4>
+              </div>
+              <div class="card-text position-relative m-0">
+                <p class="my-color m-0">Pro Player - VALORANT</p>
+                <p class="m-0">World Champion 2023</p>
+              </div>
+              <span class="position-absolute end-0 my-color">PHANTOM</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card positon-relative border-0 pt-5 pb-2 team-5">
+            <!-- 👇 this is layer to make greyscale filter -->
+            <div class="grey-layer z-1 rounded-1 position-absolute start-0 end-0 top-0"></div>
+            <!-- 👆 this is layer to make greyscale filter -->
+            <!-- this is nothing <div class="team-card-layer position-absolute top-0 bottom-0 start-0 end-0"></div> -->
+            <div class="card-body mb-0 pt-5 pb-0 mt-5">
+              <div class="card-title mt-5 font-days text-white fs-4">
+                <h4 class="mb-0 pb-1">Alex "Phantom" Chen</h4>
+              </div>
+              <div class="card-text position-relative m-0">
+                <p class="my-color m-0">Pro Player - VALORANT</p>
+                <p class="m-0">World Champion 2023</p>
+              </div>
+              <span class="position-absolute end-0 my-color">PHANTOM</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card positon-relative border-0 pt-5 pb-2 team-6">
+            <!-- 👇 this is layer to make greyscale filter -->
+            <div class="grey-layer z-1 rounded-1 position-absolute start-0 end-0 top-0"></div>
+            <!-- 👆 this is layer to make greyscale filter -->
+            <!-- this is nothing <div class="team-card-layer position-absolute top-0 bottom-0 start-0 end-0"></div> -->
+            <div class="card-body mb-0 pt-5 pb-0 mt-5">
+              <div class="card-title mt-5 font-days text-white fs-4">
+                <h4 class="mb-0 pb-1">Alex "Phantom" Chen</h4>
+              </div>
+              <div class="card-text position-relative m-0">
+                <p class="my-color m-0">Pro Player - VALORANT</p>
+                <p class="m-0">World Champion 2023</p>
+              </div>
+              <span class="position-absolute end-0 my-color">PHANTOM</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card positon-relative border-0 pt-5 pb-2 team-7">
+            <!-- 👇 this is layer to make greyscale filter -->
+            <div class="grey-layer z-1 rounded-1 position-absolute start-0 end-0 top-0"></div>
+            <!-- 👆 this is layer to make greyscale filter -->
+            <!-- this is nothing <div class="team-card-layer position-absolute top-0 bottom-0 start-0 end-0"></div> -->
+            <div class="card-body mb-0 pt-5 pb-0 mt-5">
+              <div class="card-title mt-5 font-days text-white fs-4">
+                <h4 class="mb-0 pb-1">Alex "Phantom" Chen</h4>
+              </div>
+              <div class="card-text position-relative m-0">
+                <p class="my-color m-0">Pro Player - VALORANT</p>
+                <p class="m-0">World Champion 2023</p>
+              </div>
+              <span class="position-absolute end-0 my-color">PHANTOM</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card positon-relative border-0 pt-5 pb-2 team-8">
+            <!-- 👇 this is layer to make greyscale filter -->
+            <div class="grey-layer z-1 rounded-1 position-absolute start-0 end-0 top-0"></div>
+            <!-- 👆 this is layer to make greyscale filter -->
+            <!-- this is nothing <div class="team-card-layer position-absolute top-0 bottom-0 start-0 end-0"></div> -->
+            <div class="card-body mb-0 pt-5 pb-0 mt-5">
+              <div class="card-title mt-5 font-days text-white fs-4">
+                <h4 class="mb-0 pb-1">Alex "Phantom" Chen</h4>
+              </div>
+              <div class="card-text position-relative m-0">
+                <p class="my-color m-0">Pro Player - VALORANT</p>
+                <p class="m-0">World Champion 2023</p>
+              </div>
+              <span class="position-absolute end-0 my-color">PHANTOM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+  <!-- section   end -->
+
+  <!-- !section  start -->
+  <section id="contact-us" class=" contact pb-5">
+    <div class=" text-center pt-3 mb-5">
+      <p class="fs-6 mt-5 mx-1 fw-bold">CONTACT US</p>
+      <h1 class="text-white display-5 mb-1 fw-bolder font-days">
+        Get In Touch
+      </h1>
+      <h5 class="mt-2">
+        Have questions or need support? We're here to help!
+      </h5>
+    </div>
+    <main class="container ">
+      <div class="row  row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <!-- start cards -->
+      <div class="contact-cards border-0 rounded-4 card bg-transparent mb-3">
+        <div class="row m-0 w-100 m my-card-color rounded-4 px-2 px-lg-4 ps-5 mb-5 align-content-center">
+          <div class="col-1 align-content-center ">
+      <span class="card-icon fs-3 p-3 text-black rounded-circle text-center align-self-center"><i class="my-2  fa-solid fa-location-dot"></i></span>
+          </div>
+          <div class="col-11 ">
+            <div class="card-body p-5 ">
+              <h5 class="card-title my-color font-days m-0 fw-bolder text-white">Our Location</h5>
+              <p class="card-text anything  ">
+                123 Gaming Street, Esports City, EC 12345
+              </p>
+            </div>
+          </div>
+        </div>
+              <div class="row m-0 w-100 m my-card-color rounded-4 px-4 ps-5 mb-5 align-content-center">
+          <div class="col-1 align-content-center ">
+      <span class="card-icon fs-3 p-3 text-black rounded-circle text-center align-self-center"><i class="my-2  fa-solid fa-location-dot"></i></span>
+          </div>
+          <div class="col-11 ">
+            <div class="card-body p-5 ">
+              <h5 class="card-title my-color m-0 fw-bolder font-days text-white">Our Location</h5>
+              <p class="card-text anything  ">
+                123 Gaming Street, Esports City, EC 12345
+              </p>
+            </div>
+          </div>
+        </div>
+                <div class="row m-0 w-100 m my-card-color rounded-4 px-4 ps-5 mb-5 align-content-center">
+          <div class="col-1 align-content-center ">
+      <span class="card-icon fs-3 p-3 text-black rounded-circle text-center align-self-center"><i class="my-2  fa-solid fa-location-dot"></i></span>
+          </div>
+          <div class="col-11 ">
+            <div class="card-body p-5 ">
+              <h5 class="card-title my-color m-0 fw-bolder font-days text-white">Our Location</h5>
+              <p class="card-text anything  ">
+                123 Gaming Street, Esports City, EC 12345
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gradient-card text-black m-0 py-4 w-100 d-flex flex-column gap-4 my-card-color rounded-4 px-4 ps-5 mb-5 align-content-center">
+                  
+                  <h5 class="card-title my-color m-0 fw-bolder font-days text-black">Our Location</h5>
+                  <p class="card-text anything text-black">123 Gaming Street, Esports City, EC 12345</p>
+          <div class=" align-content-center my-color  fs-4">
+            <a href="#" class="contact-a-link my-color fs-5 me-1 p-3  rounded-circle text-center bg-black  align-self-center"><i class="my-2  fa-brands fa-discord"></i></a>
+            <a href="#" class="contact-a-link my-color fs-5 me-1 p-3  rounded-circle text-center bg-black  align-self-center"><i class="my-2  fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="contact-a-link my-color fs-5 me-1 p-3  rounded-circle text-center bg-black  align-self-center"><i class="my-2  fa-brands fa-instagram"></i></a>
+            <a href="#" class="contact-a-link my-color fs-5 me-1 p-3  rounded-circle text-center bg-black  align-self-center"><i class="my-2  fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+  
+      </div>
+  
+        </div>
+        <div class="col ">
+          <div class="card my-card-color   p-4 rounded-4 form-card text-white">
+            <div class="card-header font-days border-0 bg-transparent">
+              <h4>Send us a Message</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="row row-cols-1 row-cols-lg-2">
+                  <div class="col">
+                    <div>
+                      <label for="first-name" class="mb-2 fw-bold fs-6">First Name</label>
+                      <input id="first-name" class="mb-3 rounded-3 p-2 px-3 fs-6" placeholder="Your first name" type="text" />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div>
+                      <label for="last-name" class="mb-2 fw-boldfs-6">Last Name</label>
+                      <input id="last-name" class="mb-3 rounded-3 p-2 px-3 fs-6" placeholder="Your last name" type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <label for="email" class="mb-2 fw-bold d-block fs-6">Email Address</label>
+                  <input id="email" class="mb-3 rounded-3 p-2 px-3 fs-6" placeholder="your.email@example.com" type="text" />
+                </div>
+                <div>
+                  <label for="select" class="d-block mb-2 fw-bold fs-6">Subject</label>
+                  <select id="select" class="mb-3 fw-bold d-block fs-6 rounded-3 p-2 px-3" name="cars" id="cars">
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Tournament Support">Tournament Support</option>
+                    <option value="Technical Issue">Technical Issue</option>
+                    <option value="Partnership">Partnership</option>
+                    <option value="Media Request">Media Request</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="d-block mb-2 fw-bold fs-6">massege</label>
+                  <textarea rows="5" class="mb-3 fw-bold d-block fs-6 rounded-3 p-2 px-3" name="" id=""
+                    placeholder="Tell us how we can help you...">
+                    </textarea>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn rounded-3 mb-3 w-100 bg-black">
+                  <p class="align-self-center fw-bold fs-5 m-2 text-black">
+                    Send Message 24/7
+                    <i class="fa-solid fa-paper-plane ms-2"></i>
+                  </p>
+                </button>
+              </form>
+            </div>
+            <div
+              class="card-footer py-4 mb-1 w-100 bg-transparent d-flex flex-row justify-content-evenly align-self-center text-nowrap fw-bold text-center">
+              <div>
+                <h4 class="my-color fw-bold">24/7</h4>
+                <p>Support Available</p>
+              </div>
+              <div>
+                <h4 class="my-color fw-bold">
+                  <i class="fa-solid fs-6 fa-less-than"></i>1hr </h4>
+                    <p>Average Response</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+  </section>
+  <!-- section   end -->
+
+  <!-- !footer start -->
+  <footer class="bg-black py-5">
+    <div class="container">
+      <div class="footer-head pb-4 row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div>
+            <h2 class="text-white my-color fs-5 fw-bolder font-days mb-4">
+              <i class="fa-solid fa-gamepad"></i> GameArena
+            </h2>
+            <p class="fs-6">
+              The ultimate destination for competitive gaming, esports
+              tournaments, and gaming community.
+            </p>
+            <ul class="d-flex flex-row justify-content-start gap-3 list-unstyled">
+              <li>
+                <a target="_blank" href="https://x.com"><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://twitch.tv/"><i class="fa-brands fa-twitch"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="footer-sections ms-2">
+            <h2 class="text-white mb-4 fs-5 fw-bolder font-days">Games</h2>
+            <ul class="list-unstyled d-flex flex-column gap-2 fs-5 justify-content-start">
+              <li><a class="link-underline-opacity-0" href="#">VALORANT</a></li>
+              <li><a class="link-underline-opacity-0" href="#">League of Legends</a></li>
+              <li><a class="link-underline-opacity-0" href="#">CS:GO</a></li>
+              <li><a class="link-underline-opacity-0" href="#">Dota 2</a></li>
+              <li><a class="link-underline-opacity-0" href="#">Apex Legends</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="footer-sections ms-2">
+            <h2 class="text-white mb-4 fs-5 fw-bolder font-days">Tournaments</h2>
+            <ul class="list-unstyled d-flex flex-column gap-2 fs-5 justify-content-start">
+              <li><a class="link-underline-opacity-0" href="#">Upcoming Events</a></li>
+              <li><a class="link-underline-opacity-0" href="#">Live Matches</a></li>
+              <li><a class="link-underline-opacity-0" href="#">Results</a></li>
+              <li><a class="link-underline-opacity-0" href="#">Rankings</a></li>
+              <li><a class="link-underline-opacity-0" href="#">Schedule</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="footer-sections ms-2">
+            <h2 class="text-white mb-4 fs-5 fw-bolder font-days">Support</h2>
+            <ul class="list-unstyled d-flex flex-column gap-2 fs-5 justify-content-start">
+              <li><a class="link-underline-opacity-0" href="#">Help Center</a></li>
+              <li><a class="link-underline-opacity-0" href="#">Contact Us</a></li>
+              <li><a class="link-underline-opacity-0" href="#">Bug Reports</a></li>
+              <li><a class="link-underline-opacity-0" href="#">Feature Requests</a></li>
+              <li><a class="link-underline-opacity-0" href="#">Community Guidelines</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-end py-5">
+     <div class="row row-cols-1 row-cols-lg-2 align-content-lg-between">
+        <div class="col text-center text-lg-start">
+            <div class="footer-copyright">
+              <p>© 2025 GameArena. All rights reserved.</p>
+            </div>
+        </div>
+          <div class="col ">
+            <div class="footer-end-links  text-lg-end w-100">
+              <ul class="d-flex flex-row gap-3 justify-content-center list-unstyled">
+                <li>
+                  <a class="link-underline-opacity-0" href="#Privacy">Privacy Policy</a>
+                </li>
+                <li>
+                  <a class="linderline-opacity-0" href="#Terms">Terms of Service</a>
+                </li>
+                <li>
+                  <a class="link-underline-opacity-0" href="#Cookies">Cookies Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+     </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer   end -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
